@@ -1,0 +1,91 @@
+
+#header{
+    width: 300px;
+    height: 100vh;
+    transition: 0.4s;
+}
+
+
+@media (min-width: 1200px){
+    #main{
+        margin-left: 300px;
+    }
+}
+@media (max-width: 1199px){
+    #header{
+        margin-left: -300px;
+    }
+}
+#name{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 80px;
+
+}
+#cover{
+    background-color: rgba(0, 0, 0, 0.171);
+}
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+@keyframes delete {
+    from { width: 100%; }
+    to { width: 0; }
+}
+
+.container {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid black;
+    display: inline-block;
+}
+
+.text {
+    display: inline-block;
+    overflow: hidden;
+    border-right: 2px solid black;
+    animation: typing 2s steps(10) forwards, blink 0.5s step-end infinite alternate;
+    margin-top: 100px;
+}
+/* #about{
+    width: 81%;
+    border: 2px solid black;
+} */
+.rounded{
+    width: 400px;
+    margin-left: 200px;
+}
+li{
+    font-size: 12px;
+}
+#about-text{
+    margin-right: 490px;
+}
+#header-navbar li a:hover{
+    color: white;
+    font-weight: bold;
+}
+#header-navbar li i:hover{
+    color: rgb(52, 136, 231);
+    font-weight: bold;
+}
+
+.main-bg-photo {
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-image: url('../img/hero-bg.jpg');
+}
+ /* main css */
+
+.main-bg-photo h1{
+    font-size: 60px;
+}
