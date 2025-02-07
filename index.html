@@ -15,7 +15,7 @@
 <body>
     <i class="bi bi-list fs-1 text-primary position-fixed top-0 end-0 mt-3 me-5 d-xl-none z-3"></i>
     <i class="bi bi-x fs-1 text-primary position-fixed top-0 end-0 mt-3 me-5 d-none z-3"></i>
-    <header id="header" class="position-fixed bg-dark text-light p-3 overflow-y-auto z-2 top-0 start-0">
+    <header id="header" class="position-fixed bg-dark text-light p-3 overflow-y-auto z-2 top-0 start-0 bottom-0">
         <div class="text-center">
             <img class="img-fluid" style="width: 150px; border-radius: 50%; border: 10px solid rgb(78, 74, 74);"
                 src="img/my-profile-img.jpg" alt="">
@@ -41,12 +41,12 @@
             </div>
         </div>
         <div>
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="header-navbar">
-                <li class="nav-item ps-4 pb-3 pt-4 fs-4 "><a class="nav-link" href="#"><i
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav nav-pills" id="header-navbar">
+                <li class="nav-item ps-4 pb-3 pt-4 fs-4 "><a class="nav-link" href="#scrollspyHeading1"><i
                             class="bi bi-house me-2"></i>Home</a></li>
                 <li class="nav-item ps-4 pb-3 fs-4"><a class="nav-link actiev" aria-current="page" href="#aboutpage"><i
                             class="bi bi-person me-2"></i>About</a></li>
-                <li class="nav-item ps-4 pb-3 fs-4"><a class="nav-link" href="#"><i
+                <li class="nav-item ps-4 pb-3 fs-4"><a class="nav-link" href="#resume"><i
                             class="bi bi-file-earmark-person me-2"></i>Resume</a></li>
                 <li class="nav-item ps-4 pb-3 fs-4"><a class="nav-link" href="#"><i
                             class="bi bi-images me-2"></i>Portfolio</a></li>
@@ -83,13 +83,13 @@
 
 
         </div> -->
-        <div class="main-bg-photo">
+        <div class="main-bg-photo" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
             <div style="height: 100%;" id="cover" class=" top-0  w-100 text-light d-flex align-item-center flex-column justify-content-center ps-3">
-                <h1 class="fw-bold">Alex Smith </h1>
+                <h1 class="fw-bold" id="scrollspyHeading1">Alex Smith </h1>
                 <p class="fs-1">I am designer</p>
             </div>
         </div>
-        <div class="about">
+        <div class="about " data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
             <h1 class="text-dark text-center fs-1 fw-bold mt-4  " id="about-text">
                 <ul id="aboutpage">About </ul>
             </h1>
@@ -159,8 +159,145 @@
             </div>
         
         </div>
+        <div>
+            <div class="row">
+                <div class="col-3 p-4">
+                    <h1 class="text-center fw-bold"><i class="bi bi-emoji-smile text-info"></i> 232</h1>
+                    <p class="text-center"><strong>Happy clients</strong> <br> consequenter quae</p>
+                  
+                </div>
+                <div class="col-3 p-4">
+                    <h1 class="text-center fw-bold"><i class="bi bi-journal-richtext text-info"></i> 521</h1>
+                    <p class="text-center"><strong>Projects </strong>adipisce atque <br> consequenter quae</p>
+                </div>
+                <div class="col-3 p-4">
+                    <h1 class="text-center fw-bold"><i class="bi bi-headset text-info"></i> 1453</h1>
+                    <p class="text-center"><strong>Hours of support </strong>aut <br> commodi quaret</p>
+                </div>
+                <div class="col-3 p-4">
+                    <h1 class="text-center fw-bold"><i class="bi bi-people-fill text-info"></i> 32</h1>
+                    <p class="text-center"><strong>Hard Workers</strong>rerum aspenso <br> consequenter dolor</p>
+                </div>
+            </div>
+        </div>
+        <h1 class="p-4 fw-bold" id="aboutpage" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">Skills</h1>
+        <p class="ps-4  fs-4 fw-semibold">To be honest I did not understand anything which is written.</p>
+        <div class="row">
+            <div class="col-12 col-lg-6 p-4">
+             
+                <div class="d-flex justify-content-between">
+                    <p class="fw-medium">HTML</p>
+                    <p class="justify-content-center">100%</p>
+                </div>
+                <div class="progress" role="progressbar" aria-label="HTML" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 100%;"></div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 p-4">
+                <div class="d-flex justify-content-between">
+                    <p class="fw-medium">PHP</p>
+                    <p class="justify-content-center">80%</p>
+                </div>
+                <div class="progress" role="progressbar" aria-label="PHP" aria-valuenow="80" aria-valuemin="0" aria-valuemax="80">
+                    <div class="progress-bar" style="width: 80%;"></div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 p-4">
+                <div class="d-flex justify-content-between">
+                    <p class="fw-medium">CSS</p>
+                    <p class="justify-content-center">90%</p>
+                </div>
+                <div class="progress" role="progressbar" aria-label="CSS" aria-valuenow="90" aria-valuemin="0" aria-valuemax="90">
+                    <div class="progress-bar" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 p-4">
+                <div class="d-flex justify-content-between">
+                    <p class="fw-medium">WORDPRESS/CMS</p>
+                    <p class="justify-content-center">90%</p>
+                </div>
+                <div class="progress" role="progressbar" aria-label="CSS" aria-valuenow="90" aria-valuemin="0" aria-valuemax="90">
+                    <div class="progress-bar" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 p-4">
+                <div class="d-flex justify-content-between">
+                    <p class="fw-medium">JAVASCRIPT</p>
+                    <p class="justify-content-center">75%</p>
+                </div>
+                <div class="progress" role="progressbar" aria-label="CSS" aria-valuenow="75" aria-valuemin="0" aria-valuemax="75">
+                    <div class="progress-bar" style="width: 75%;"></div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 p-4">
+                <div class="d-flex justify-content-between">
+                    <p class="fw-medium">PHOTOSHOP</p>
+                    <p class="justify-content-center">55%</p>
+                </div>
+                <div class="progress" role="progressbar" aria-label="CSS" aria-valuenow="55" aria-valuemin="0" aria-valuemax="55">
+                    <div class="progress-bar" style="width: 55%;"></div>
+                </div>
+            </div>
+        </div>
+        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+            <h1 class="m-4 fw-bold" id="resume">Resume</h1>
+        </div>
+        <p class="m-4 fw-medium">Although I have not enough experience in Backend programming, I know that a bit little. If you give me opportunity and time, it is feasible to learn that programming language from scratch.</p>
+        <div class="row">
+          
+            <div class="col-12 col-lg-6 p-3">
+                <div>
+                    <h1 class="fw-bold ms-4">Summary</h1>
+    
+                    <p class="ms-5 mt-4 fs-4">BRANDON JOHNSON</p>
+                    <p class="ms-5 "><i>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing  user-centered digital/print marketing material from initial concept to final, polished deliverable.</i></p>
+                    <ul class="ms-5 ">
+                        <li class="navbar-list fs-6 pb-3">Portland Par 127, Orlondo, FL</li>
+                        <li class="navbar-list fs-6 pb-3">(123) 456-7891</li>
+                        <li class="navbar-list fs-6 pb-3">alice.barkley@example.com</li>
+                    </ul>
+                   
+                </div>
+                <div>
+                    <h1 class="fw-bold ms-4">Education</h1>
+             
+                    <p class="ms-5 mt-4 fs-4">MASTER OF FINE ARTS & GRAPHIC DESIGN</p>
+                    <p class="ms-5 mt-3 fw-bold">2015-2016</p>
+                    <p class="ms-5 mt-3 "><i>Rochester Istitute of Technology, Rochester, NY</i></p>
+                    <p class="ms-5 mt-3 ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates nesciunt eum dignissimos perferendis possimus provident itaque repellat quam neque earum.
+                    </p>
+           
+                    <p class="ms-5 mt-4 fs-4">BACHELOR OF FINE ARTS & GRAPHIC DESIGN </p>
+                    <p class="ms-5 mt-3 fw-bold">2010-2014</p>
+                    <p class="ms-5 mt-3 "><i>Rochester Istitute of Technology, Rochester, NY</i></p>
+                    <p class="ms-5 mt-3 ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates nesciunt eum dignissimos perferendis possimus provident itaque repellat quam neque earum.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 p-3">
+                <h1 class="fw-bold ms-4">Professional Experience</h1>
 
-
+                <p class="ms-5 mt-4 fs-4">SENIOR GRAPHIC DESIGN SPECIALIST </p>
+                <p class="ms-5 mt-3 fw-bold">2019-Present</p>
+                <p class="ms-5 mt-3 "><i>Experion, New York, NY </i></p>
+                <ul class="ms-5">
+                    <li class="navbar-list fs-6 pb-3">Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
+                    <li class="navbar-list fs-6 pb-3">Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project</li>
+                    <li class="navbar-list fs-6 pb-3">Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
+                    <li class="navbar-list fs-6 pb-3">Oversee the efficient use of production project budgets ranging from $2000 -$25000</li>
+                </ul>
+          
+                <p class="ms-5 mt-4 fs-4">GRAPHIC DESIGN SPECIALIST </p>
+                <p class="ms-5 mt-3 fw-bold">2017-2018</p>
+                <p class="ms-5 mt-3 "><i>Stepping Stone Advertising, New York, NY </i></p>
+                <ul class="ms-5">
+                    <li class="navbar-list fs-6 pb-3">Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
+                    <li class="navbar-list fs-6 pb-3">Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project</li>
+                    <li class="navbar-list fs-6 pb-3">Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
+                    <li class="navbar-list fs-6 pb-3">Oversee the efficient use of production project budgets ranging from $2000 -$25000</li>
+                </ul>
+            </div>
+        </div>
     </main>
    
     <!-- <div>
