@@ -89,3 +89,7 @@ li{
 .main-bg-photo h1{
     font-size: 60px;
 }
+#portfolio-list li{
+    list-style: none;
+    
+}
